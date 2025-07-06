@@ -75,7 +75,7 @@
   line-height: 60px;
   animation: text 3s 1;
   animation-delay: 4s;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 
 @keyframes text {
@@ -127,9 +127,9 @@
 .cards {
   line-height: 25px;
   text-align: center;
-  border: 10px solid rgb(40, 2, 67);
+  border: 7px solid rgb(40, 2, 67);
   border-radius: 10px;
-  padding: 30px 20px;
+  padding: 30px 10px;
   margin: 40px 0;
   transition: transform 1.5s ease;
   color: rgb(40, 2, 67);
@@ -137,7 +137,7 @@
 }
 
 .cards:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 3px 3px 8px;
 }
 
@@ -172,4 +172,27 @@
   justify-content: center;
   color: white;
   font-size: 20px;
+}
+
+
+@media  screen and (max-width: 320px) {
+  .cards {
+    font-size: 14px;
+    padding: 20px 0;
+  }
+
+  .hero h1 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+
+  .hero button {
+    font-size: 14px;
+  }
 }
